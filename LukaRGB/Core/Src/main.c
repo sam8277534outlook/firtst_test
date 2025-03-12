@@ -155,7 +155,7 @@ int main(void)
 								{
 					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比
 					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 154);    //修改比较值，修改占空比
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比	
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 3);    //修改比较值，修改占空比	
 									flaga=1;
 									}
 								else if(flaga==1)
