@@ -121,9 +121,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, i);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, i);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-//		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, i);    //�޸ıȽ�ֵ���޸�ռ�ձ�		
+//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, i);    //修改比较值，修改占空比
+//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, i);    //修改比较值，修改占空比
+//		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, i);    //修改比较值，修改占空比		
 
 	
         if (Key_Scan(GPIOA, GPIO_PIN_1) == 1)
@@ -140,9 +140,9 @@ int main(void)
 						if(i<1)i=0;
 					}
 					
-				 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 100*i);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-				 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 100*i);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-				 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 100*i);    //�޸ıȽ�ֵ���޸�ռ�ձ�		
+				 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 100*i);    //修改比较值，修改占空比
+				 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 100*i);    //修改比较值，修改占空比
+				 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 100*i);    //修改比较值，修改占空比		
 
         }
          if (Key_Scan(GPIOA, GPIO_PIN_2) == 1)
@@ -153,37 +153,37 @@ int main(void)
 						
 								if(flaga==0)
 								{
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 154);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�	
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 154);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比	
 									flaga=1;
 									}
 								else if(flaga==1)
 								{
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 200);    //�޸ıȽ�ֵ���޸�ռ�ձ�	
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 0);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 200);    //修改比较值，修改占空比	
 									flaga=2;						
 									}
 								else if(flaga==2)
 								{
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 200);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 5);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 5);    //�޸ıȽ�ֵ���޸�ռ�ձ�	
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 200);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 25);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 5);    //修改比较值，修改占空比	
 									flaga=3;						
 								}			
 								else if(flaga==3)
 								{
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 200);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 200);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1,200);    //�޸ıȽ�ֵ���޸�ռ�ձ�	
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 200);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 200);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1,200);    //修改比较值，修改占空比	
 									flaga=4;						
 								}			
 								else if(flaga==4)
 								{
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 0);    //�޸ıȽ�ֵ���޸�ռ�ձ�	
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 0);    //修改比较值，修改占空比
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 0);    //修改比较值，修改占空比	
 									flaga=0;						
 								}			
 								
@@ -199,16 +199,16 @@ int main(void)
 						i--;
 						if(i<1)i=0;
 					}
-     __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 1);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 1);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 1);    //�޸ıȽ�ֵ���޸�ռ�ձ�		
+     __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 1);    //修改比较值，修改占空比
+		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 1);    //修改比较值，修改占空比
+		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 1);    //修改比较值，修改占空比		
         }
 
 //				else
 //				{
-//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 2000);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 2000);    //�޸ıȽ�ֵ���޸�ռ�ձ�
-//		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 2000);    //�޸ıȽ�ֵ���޸�ռ�ձ�		
+//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 2000);    //修改比较值，修改占空比
+//		 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 2000);    //修改比较值，修改占空比
+//		 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 2000);    //修改比较值，修改占空比		
 //				}
 
   }
