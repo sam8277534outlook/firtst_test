@@ -169,7 +169,7 @@ int main(void)
 								{
 					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, 200);    //修改比较值，修改占空比
 					 __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_4, 25);    //修改比较值，修改占空比
-					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 5);    //修改比较值，修改占空比	
+					 __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, 15);    //修改比较值，修改占空比	
 									flaga=3;						
 								}			
 								else if(flaga==3)
