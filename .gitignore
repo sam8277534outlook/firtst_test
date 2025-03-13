@@ -17,6 +17,7 @@
 *.dbg*
 *.uvguix.*
 .mxproject
+*.log
  
 RTE/
 Templates/
@@ -33,4 +34,5 @@ Examples/
 #JLINK file
 JLinkLog.txt
 *.dbgconf
+
 
